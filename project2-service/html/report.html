@@ -2,36 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='/css/styles.css'>
+    <link rel='stylesheet' href='styles.css'>
     <link rel='icon' type='image/png' href='https://img.icons8.com/ios/50/000000/milk-carton.png'>
     <title>Project 2 Report</title>
   </head>
   <body>
-
-    <h1>URLS:</h1>
+    <h1>Report</h1>
+    <p>This project is an Expressed based webservice served securely using Nginx.
+	It supports GET, POST, PATCH, and DELETE HTTP requests, cross-origin resource sharing, and is backed by a relational database using MySQL.
+	Data is sent and recived in JSON format. The service is secure and only accessible through allowed ports and was started using pm2.
+    <h2>URLS:</h2>
     <ul>
       <li>
-        GET https://project2.milkisreallyjustcowsauce.me:8443/posts, gets all posts that are visible
+       <p>GET https://project2.milkisreallyjustcowsauce.me:8443/posts, gets all posts that are visible</p>
       </li>
       <li>
-        GET https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, gets post with specified id
+       <p> GET https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, gets post with specified id</p>
       </li>
       <li>
-        POST https://project2.milkisreallyjustcowsauce.me:8443/posts, creates a new post. Expects request body to contain "content" attribute that contains the text for your post.
+       <p> POST https://project2.milkisreallyjustcowsauce.me:8443/posts, creates a new post. Expects request body to contain "content" attribute that contains the text for your post.</p>
       </li>
       <li>
-        POST https://project2.milkisreallyjustcowsauce.me:8443/comment/:id, creates a new comment to a post with the given id and increments that post's comment count. Expects request body to contain "content" attribute that contains the text for your post.
+        <p>POST https://project2.milkisreallyjustcowsauce.me:8443/comment/:id, creates a new comment to a post with the given id and increments that post's comment count. Expects request body to contain "content" attribute that contains the text for your post.</p>
       </li>
       <li>
-        PATCH https://project2.milkisreallyjustcowsauce.me:8443/like/:id, gives post with the given id a like
+        <p>PATCH https://project2.milkisreallyjustcowsauce.me:8443/like/:id, gives post with the given id a like</p>
       </li>
       <li>
-        DELETE https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, deletes post with the given id.
+        <p>DELETE https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, deletes post with the given id.</p>
       </li>
     </ul>
-
-    <footer>
-      <a href="https://icons8.com/icon/kFv9vkwQHKpV/milk-carton">Milk Carton icon by Icons8</a>
-    </footer>
   </body>
 </html>

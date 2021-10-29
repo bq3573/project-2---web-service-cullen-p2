@@ -23,6 +23,7 @@ service.use((request, response, next) => {
 });
 
 service.use(express.static('html'));
+service.use(express.static('css'));
 
 // endpoints
 
