@@ -17,7 +17,21 @@ connection.connect(error => {
 
 service.use(express.json());
 
+service.use((request, response, next) => {
+  response.set('Access-Control-Allow-Origin', '*');
+  next();
+});
+
+service.use(express.static('html'));
+
 // endpoints
+
+service.options('*', (request, response) => {
+  response.set('Access-Control-Allow-Headers', 'Content-Type');
+  response.set('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE');
+  response.sendStatus(200);
+});
+
 service.get('/posts/:id', (request, response) => {
   const id = parseInt(request.params.id);
 

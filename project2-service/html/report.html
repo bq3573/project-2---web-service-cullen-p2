@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='/css/styles.css'>
+    <link rel='icon' type='image/png' href='https://img.icons8.com/ios/50/000000/milk-carton.png'>
+    <title>Project 2 Report</title>
+  </head>
+  <body>
+
+    <h1>URLS:</h1>
+    <ul>
+      <li>
+        GET https://project2.milkisreallyjustcowsauce.me:8443/posts, gets all posts that are visible
+      </li>
+      <li>
+        GET https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, gets post with specified id
+      </li>
+      <li>
+        POST https://project2.milkisreallyjustcowsauce.me:8443/posts, creates a new post. Expects request body to contain "content" attribute that contains the text for your post.
+      </li>
+      <li>
+        POST https://project2.milkisreallyjustcowsauce.me:8443/comment/:id, creates a new comment to a post with the given id and increments that post's comment count. Expects request body to contain "content" attribute that contains the text for your post.
+      </li>
+      <li>
+        PATCH https://project2.milkisreallyjustcowsauce.me:8443/like/:id, gives post with the given id a like
+      </li>
+      <li>
+        DELETE https://project2.milkisreallyjustcowsauce.me:8443/posts/:id, deletes post with the given id.
+      </li>
+    </ul>
+
+    <footer>
+      <a href="https://icons8.com/icon/kFv9vkwQHKpV/milk-carton">Milk Carton icon by Icons8</a>
+    </footer>
+  </body>
+</html>
